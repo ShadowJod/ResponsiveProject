@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single+Ink:wght@100..900&family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: "Michroma", sans-serif;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+main #left {
+  height: 100%;
+  width: 40%;
+}
+main #left #nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+main #left #nav #nav-left h5 i {
+  font-size: 1.3rem;
+}
+main #left #nav #nav-right {
+  display: flex;
+  gap: 3rem;
+}
+main #left #nav #nav-right a {
+  color: black;
+}
+main #left #nav #nav-right h5 i {
+  font-size: 1.3rem;
+}
+main #left #main {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0rem 5rem;
+  gap: 1rem;
+}
+main #left #main h1 {
+  font-size: 4rem;
+}
+main #left #main p {
+  width: 30rem;
+}
+main #left #main a {
+  color: black;
+}
+main #right {
+  height: 100%;
+  width: 60%;
+}
+main #right #right-top {
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+main #right #right-top #rt-left {
+  height: 100%;
+  width: 50%;
+}
+main #right #right-top #rt-left img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+main #right #right-top #rt-right {
+  height: 100%;
+  width: 50%;
+}
+main #right #right-top #rt-right img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+main #right #right-bottom {
+  height: 50%;
+  width: 100%;
+}
+main #right #right-bottom img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  main #left, main #right {
+    width: 100%;
+    height: auto;
+  }
+  main #main h1 {
+    font-size: 2rem;
+  }
+  main #main p {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  main #nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */

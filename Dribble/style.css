@@ -38,6 +38,11 @@ nav #nav1 ul {
 nav #nav1 ul li {
   list-style: none;
   font-family: "Special Gothic", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+nav #nav1 ul li i {
+  font-size: 0.7rem;
 }
 nav #nav2 #bttn {
   display: flex;
@@ -63,11 +68,13 @@ nav #nav2 #bttn #bttn2 {
 
 main {
   width: 100%;
-  padding: 1rem 4rem;
+  padding: 0rem 4rem;
 }
 main #sec1 {
   width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 main #sec1 #left {
   width: 50%;
@@ -100,9 +107,10 @@ main #sec1 #left #left-bttm #top h5:nth-child(1) {
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   font-weight: 500;
+  cursor: pointer;
 }
 main #sec1 #left #left-bttm #top h5:nth-child(1):hover {
-  background-color: grey;
+  background-color: #3A3546;
   color: white;
 }
 main #sec1 #left #left-bttm #top h5:nth-child(2) {
@@ -111,9 +119,10 @@ main #sec1 #left #left-bttm #top h5:nth-child(2) {
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   font-weight: 500;
+  cursor: pointer;
 }
 main #sec1 #left #left-bttm #top h5:nth-child(2):hover {
-  background-color: grey;
+  background-color: #3A3546;
   color: white;
 }
 main #sec1 #left #left-bttm #top h5:nth-child(3) {
@@ -122,23 +131,38 @@ main #sec1 #left #left-bttm #top h5:nth-child(3) {
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   font-weight: 500;
+  cursor: pointer;
 }
 main #sec1 #left #left-bttm #top h5:nth-child(3):hover {
-  background-color: grey;
+  background-color: #3A3546;
   color: white;
+}
+main #sec1 #left #left-bttm #mid .search-box {
+  background-image: url(Search_icon.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
 }
 main #sec1 #left #left-bttm #mid input {
   padding: 1rem;
   width: 38rem;
   border-radius: 1.5rem;
   outline: none;
-  border: none;
+  border: 1px solid transparent;
   background-color: #F3F3F6;
   font-family: Arial, Helvetica, sans-serif;
+  transition: all ease-in 0.2s;
+}
+main #sec1 #left #left-bttm #mid input:hover {
+  background-color: transparent;
+  border-color: lightcoral;
+  outline: none;
 }
 main #sec1 #left #left-bttm #bttm ul {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   align-items: center;
 }
 main #sec1 #left #left-bttm #bttm ul li:nth-child(1) {
@@ -152,18 +176,37 @@ main #sec1 #left #left-bttm #bttm ul li {
   font-size: 0.7rem;
   border: 1px solid grey;
   border-radius: 1rem;
+  cursor: pointer;
 }
 main #sec1 #right {
   width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-main #sec1 #right #vid {
-  height: 100%;
 }
 main #sec1 #right #vid video {
-  height: 100%;
   width: 100%;
+  height: 65vh;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 1rem;
+}
+main #sec2 {
+  display: flex;
+  margin-top: 1rem;
+  padding: 1rem 1rem;
+  align-items: center;
+  gap: 1rem;
+  background-color: #F3F3F6;
+  border-radius: 1rem;
+}
+main #sec2 button {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem 1.3rem;
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 1.5rem;
+  font-weight: 600;
+}
+main #sec2 p {
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.6;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Momo+Signature&family=Special+Gothic:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Momo+Signature&family=Special+Gothic:wght@400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Michroma", sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  background-color: mediumorchid;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav #nav1 {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+nav #nav1 h3 {
+  font-size: 1.5rem;
+  font-family: "Momo Signature", cursive;
+}
+nav #nav1 ul {
+  display: flex;
+  gap: 2rem;
+}
+nav #nav1 ul li {
+  list-style: none;
+  font-family: "Special Gothic", sans-serif;
+}
+nav #nav2 #bttn {
+  display: flex;
+  gap: 1rem;
+}
+nav #nav2 #bttn #bttn1 {
+  font-family: "Special Gothic", sans-serif;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 1rem 1.5rem;
+}
+nav #nav2 #bttn #bttn2 {
+  padding: 1rem 1.5rem;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  border-radius: 2rem;
+  font-family: "Special Gothic", sans-serif;
+}
+
+main {
+  width: 100%;
+}
+main #sec1 {
+  width: 100%;
+  display: flex;
+}
+main #sec1 #left {
+  width: 50%;
+}
+main #sec1 #right {
+  width: 50%;
+}/*# sourceMappingURL=style.css.map */

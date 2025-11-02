@@ -9,14 +9,14 @@
   font-family: "Michroma", sans-serif;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
 }
 
 nav {
   width: 100%;
-  background-color: mediumorchid;
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
@@ -63,6 +63,7 @@ nav #nav2 #bttn #bttn2 {
 
 main {
   width: 100%;
+  padding: 1rem 4rem;
 }
 main #sec1 {
   width: 100%;
@@ -70,7 +71,99 @@ main #sec1 {
 }
 main #sec1 #left {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main #sec1 #left h2 {
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main #sec1 #left p {
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.6;
+  width: 27rem;
+}
+main #sec1 #left #left-bttm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+main #sec1 #left #left-bttm #top {
+  display: flex;
+  gap: 1rem;
+}
+main #sec1 #left #left-bttm #top h5:nth-child(1) {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-weight: 500;
+}
+main #sec1 #left #left-bttm #top h5:nth-child(1):hover {
+  background-color: grey;
+  color: white;
+}
+main #sec1 #left #left-bttm #top h5:nth-child(2) {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-weight: 500;
+}
+main #sec1 #left #left-bttm #top h5:nth-child(2):hover {
+  background-color: grey;
+  color: white;
+}
+main #sec1 #left #left-bttm #top h5:nth-child(3) {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-weight: 500;
+}
+main #sec1 #left #left-bttm #top h5:nth-child(3):hover {
+  background-color: grey;
+  color: white;
+}
+main #sec1 #left #left-bttm #mid input {
+  padding: 1rem;
+  width: 38rem;
+  border-radius: 1.5rem;
+  outline: none;
+  border: none;
+  background-color: #F3F3F6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main #sec1 #left #left-bttm #bttm ul {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+main #sec1 #left #left-bttm #bttm ul li:nth-child(1) {
+  border: none;
+  padding: 0;
+}
+main #sec1 #left #left-bttm #bttm ul li {
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.7rem;
+  border: 1px solid grey;
+  border-radius: 1rem;
 }
 main #sec1 #right {
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #sec1 #right #vid {
+  height: 100%;
+}
+main #sec1 #right #vid video {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
 }/*# sourceMappingURL=style.css.map */

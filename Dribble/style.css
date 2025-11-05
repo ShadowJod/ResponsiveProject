@@ -110,7 +110,7 @@ main #sec1 #left #left-bttm #top h5:nth-child(1) {
   cursor: pointer;
 }
 main #sec1 #left #left-bttm #top h5:nth-child(1):hover {
-  background-color: #3A3546;
+  background-color: #3a3546;
   color: white;
 }
 main #sec1 #left #left-bttm #top h5:nth-child(2) {
@@ -122,7 +122,7 @@ main #sec1 #left #left-bttm #top h5:nth-child(2) {
   cursor: pointer;
 }
 main #sec1 #left #left-bttm #top h5:nth-child(2):hover {
-  background-color: #3A3546;
+  background-color: #3a3546;
   color: white;
 }
 main #sec1 #left #left-bttm #top h5:nth-child(3) {
@@ -134,7 +134,7 @@ main #sec1 #left #left-bttm #top h5:nth-child(3) {
   cursor: pointer;
 }
 main #sec1 #left #left-bttm #top h5:nth-child(3):hover {
-  background-color: #3A3546;
+  background-color: #3a3546;
   color: white;
 }
 main #sec1 #left #left-bttm #mid .search-box {
@@ -151,7 +151,7 @@ main #sec1 #left #left-bttm #mid input {
   border-radius: 1.5rem;
   outline: none;
   border: 1px solid transparent;
-  background-color: #F3F3F6;
+  background-color: #f3f3f6;
   font-family: Arial, Helvetica, sans-serif;
   transition: all ease-in 0.2s;
 }
@@ -194,7 +194,7 @@ main #sec2 {
   padding: 1rem 1rem;
   align-items: center;
   gap: 1rem;
-  background-color: #F3F3F6;
+  background-color: #f3f3f6;
   border-radius: 1rem;
 }
 main #sec2 button {
@@ -221,6 +221,9 @@ main #sec3 {
 main #sec3 select {
   height: -moz-fit-content;
   height: fit-content;
+  border: 1px solid gray;
+  border-radius: 1rem;
+  outline: none;
 }
 main #sec3 ul {
   display: flex;
@@ -229,9 +232,10 @@ main #sec3 ul {
 main #sec3 ul li {
   list-style: none;
   font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
 }
 main #sec3 ul li:hover {
-  background-color: grey;
+  opacity: 0.7;
 }
 main #sec3 button {
   height: -moz-fit-content;
@@ -249,13 +253,210 @@ main #sec4 {
 main #sec4 #container {
   width: 100%;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
 }
 main #sec4 #container .boxes {
-  background-color: green;
   flex-shrink: 0;
   height: 300px;
   width: 300px;
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main #sec4 #container .boxes #img {
+  height: 90%;
+  width: 100%;
+  position: relative;
+}
+main #sec4 #container .boxes #img:hover .hoverclass {
+  opacity: 0.8;
+}
+main #sec4 #container .boxes #img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.7rem;
+}
+main #sec4 #container .boxes #img .hoverclass {
+  height: 50%;
+  width: 100%;
+  background: linear-gradient(to top, black, transparent);
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  transition: all ease-in 0.2s;
+  opacity: 0;
+}
+main #sec4 #container .boxes #img .hoverclass .element {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 2rem 1.3rem;
+  justify-content: space-between;
+  align-items: end;
+}
+main #sec4 #container .boxes #img .hoverclass .element h5 {
+  color: white;
+  font-size: 1.1rem;
+}
+main #sec4 #container .boxes #img .hoverclass .element .icons {
+  display: flex;
+  gap: 1rem;
+}
+main #sec4 #container .boxes #img .hoverclass .element .icons p:nth-child(1) {
+  padding: 0.3rem 0.4rem;
+  background-color: white;
+  border-radius: 50%;
+}
+main #sec4 #container .boxes #img .hoverclass .element .icons p:nth-child(2) {
+  padding: 0.3rem 0.4rem;
+  background-color: white;
+  border-radius: 50%;
+}
+main #sec4 #container .boxes .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #sec4 #container .boxes .content #left {
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+main #sec4 #container .boxes .content #left p:nth-child(1) {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.3rem 0.3rem;
+  background-color: gray;
+  border-radius: 50%;
+  font-size: 0.7rem;
+}
+main #sec4 #container .boxes .content #left p:nth-child(2) {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+main #sec4 #container .boxes .content #left p:nth-child(3) {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: white;
+  background-color: gray;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.3rem;
+}
+main #sec4 #container .boxes .content #right {
+  display: flex;
+  gap: 0.3rem;
+}
+main #sec4 #container .boxes .content #right p:nth-child(1) {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
+main #sec4 #container .boxes .content #right p:nth-child(1) i {
+  color: gray;
+}
+main #sec4 #container .boxes .content #right p:nth-child(2) {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
+main #sec4 #container .boxes .content #right p:nth-child(2) i {
+  color: gray;
+}
+main #sec5 {
+  width: 100%;
+  padding: 3rem 0rem;
+  text-align: center;
+}
+main #sec5 button {
+  padding: 0.5rem 1rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  font-weight: 600;
+}
+main #sec5 button:hover {
+  opacity: 0.6;
+}
+
+#sec6 #carousel {
+  overflow-x: auto;
+  display: flex;
+}
+#sec6 #carousel::-webkit-scrollbar {
+  display: none;
+}
+#sec6 #carousel:hover #group {
+  animation: none;
+}
+#sec6 #carousel #group {
+  display: flex;
+  gap: 1rem;
+  animation: spin 15s infinite linear;
+  transition: all ease-in 1s;
+}
+#sec6 #carousel #group .imgg img {
+  border-radius: 1rem;
+  width: 13rem;
+}
+#sec6 #carousel #group .imgg p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+@keyframes spin {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -100%;
+  }
+}
+
+#footer1 {
+  display: flex;
+  padding: 4rem 10rem;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer1 #foot1 h5 {
+  font-family: "Momo Signature", cursive;
+  font-size: 1.5rem;
+}
+#footer1 #foot2 ul {
+  display: flex;
+  gap: 2rem;
+}
+#footer1 #foot2 ul li {
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#footer1 #foot3 i {
+  font-size: 1.5rem;
+}
+
+footer {
+  display: flex;
+  padding: 2rem 10rem;
+  justify-content: space-between;
+}
+footer #left {
+  display: flex;
+  gap: 1rem;
+}
+footer #left p {
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.6;
+}
+footer #right {
+  display: flex;
+  gap: 1rem;
+}
+footer #right p {
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.6;
 }/*# sourceMappingURL=style.css.map */

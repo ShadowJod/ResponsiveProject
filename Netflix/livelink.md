@@ -1,1 +1,1 @@
-https://690f15ba945a3cc08de73412--earnest-queijadas-bb2543.netlify.app/
+https://690f1881bfa55ec6833173f6--fluffy-malabi-9d2132.netlify.app/

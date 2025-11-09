@@ -218,6 +218,9 @@ main #sec3 {
   align-items: center;
   gap: 1rem;
 }
+main #sec3 #hidden {
+  display: none;
+}
 main #sec3 select {
   height: -moz-fit-content;
   height: fit-content;
@@ -459,4 +462,131 @@ footer #right {
 footer #right p {
   font-family: Arial, Helvetica, sans-serif;
   opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 0.5rem 1rem;
+  }
+  nav #nav1 ul {
+    display: none;
+  }
+  nav #nav2 button:nth-child(1) {
+    display: none;
+  }
+  main {
+    padding: 1rem;
+  }
+  main #sec1 #left {
+    text-align: center;
+    width: 100%;
+  }
+  main #sec1 #left h2 {
+    font-size: 1.8rem;
+  }
+  main #sec1 #left p {
+    width: 100%;
+    opacity: 1;
+  }
+  main #sec1 #left #left-bttm #top {
+    gap: 0.5rem;
+  }
+  main #sec1 #left #left-bttm #mid input {
+    width: 100%;
+  }
+  main #sec1 #left #left-bttm #bttm {
+    width: 100%;
+  }
+  main #sec1 #left #left-bttm #bttm ul {
+    overflow: auto;
+  }
+  main #sec1 #left #left-bttm #bttm ul::-webkit-scrollbar {
+    display: none;
+  }
+  main #sec1 #left #left-bttm #bttm ul li {
+    flex-shrink: 0;
+  }
+  main #sec1 #right #vid {
+    display: none;
+  }
+  main #sec2 {
+    margin-top: 3rem;
+    flex-direction: column;
+    align-items: start;
+  }
+  main #sec3 {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0;
+  }
+  main #sec3 #hidden {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  main #sec3 #hidden select {
+    display: block;
+    width: 30%;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.7rem;
+  }
+  main #sec3 #hidden button {
+    display: block;
+    width: 30%;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.7rem;
+  }
+  main #sec3 select {
+    display: none;
+  }
+  main #sec3 ul {
+    width: 100%;
+    overflow: auto;
+  }
+  main #sec3 ul::-webkit-scrollbar {
+    display: none;
+  }
+  main #sec3 ul li {
+    flex-shrink: 0;
+  }
+  main #sec3 button {
+    display: none;
+  }
+  #footer1 {
+    width: 100%;
+    padding: 1rem;
+    flex-direction: column;
+  }
+  #footer1 #foot1 {
+    padding-top: 1rem;
+  }
+  #footer1 #foot2 {
+    padding-top: 1rem;
+    width: 100%;
+  }
+  #footer1 #foot2 ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  #footer1 #foot2 ul li {
+    flex-shrink: 0;
+  }
+  #footer1 #foot3 {
+    margin-top: 1.5rem;
+  }
+  footer {
+    padding: 4rem 1rem 2rem 1rem;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  footer #right {
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=style.css.map */

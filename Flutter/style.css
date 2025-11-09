@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+nav #nav1 img {
+  height: 2rem;
+}
+nav #nav2 {
+  display: flex;
+}
+nav #nav2 i {
+  font-size: 1.5rem;
+}
+nav #nav2 a {
+  display: none;
+}
+nav #nav2 button {
+  display: none;
+}
+
+main #sec1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: linear-gradient(#f3fcff, #fae5ee);
+}
+main #sec1 #wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main #sec1 #wrapper #top {
+  padding: 1rem;
+}
+main #sec1 #wrapper #top img {
+  width: 100%;
+}
+main #sec1 #wrapper #bottom {
+  width: 100%;
+  text-align: center;
+}
+main #sec1 #wrapper #bottom h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  line-height: 1;
+  width: 100%;
+  padding: 0rem 3rem;
+}
+main #sec1 #textt {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 0rem 3rem;
+}
+main #sec1 #textt h2 {
+  margin: 4rem 0rem;
+  font-weight: 200;
+  font-size: 1.9rem;
+}
+main #sec2 {
+  padding: 2rem 2rem;
+}
+main #sec2 #cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+main #sec2 #cards .card {
+  border-top: 3px solid rgba(222, 220, 220, 0.9);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main #sec2 #cards .card h2 {
+  padding-top: 2rem;
+}
+main #sec2 #cards .card p {
+  width: 80%;
+  font-size: 1.1rem;
+}
+main #sec2 #cards .card img {
+  margin-top: 2rem;
+  width: 80%;
+}
+
+@media (min-width: 1024px) {
+  nav {
+    padding: 1rem 5rem;
+  }
+  nav #nav2 {
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 2rem;
+    align-items: center;
+  }
+  nav #nav2 i {
+    display: none;
+    color: black;
+  }
+  nav #nav2 a {
+    text-decoration: none;
+    color: black;
+    display: initial;
+  }
+  nav #nav2 a i {
+    display: initial;
+  }
+  nav #nav2 button {
+    display: initial;
+    padding: 0.5rem 1.3rem;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 98, 255);
+    color: white;
+    font-weight: 600;
+    border-radius: 1rem;
+  }
+  main #sec1 {
+    padding: 1rem 8rem;
+  }
+  main #sec1 #wrapper {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  main #sec1 #wrapper #bottom h1 {
+    text-align: start;
+    font-size: 4.5vw;
+    padding-right: 5rem;
+  }
+  main #sec1 #textt {
+    padding: 0rem 3rem;
+  }
+  main #sec1 #textt h2 {
+    margin: 3rem 0rem;
+    font-size: 2.5vw;
+  }
+  main #sec2 {
+    padding: 1rem 8rem;
+  }
+  main #sec2 #cards {
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -11,10 +11,15 @@ body {
 }
 
 nav {
+  position: fixed;
+  width: 100%;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+   z-index: 100;
   #nav1 {
     img {
       height: 2rem;
@@ -38,6 +43,7 @@ nav {
 }
 
 main {
+  padding-top: 4rem;
   #sec1 {
     display: flex;
     flex-direction: column;
@@ -307,7 +313,7 @@ main {
     padding: 2rem;
 
     .card-content {
-      height: 40vh;
+      
       width: 100%;
       background-color: #042449;
       border-radius: 1.4rem;
@@ -650,7 +656,7 @@ main {
     .card-container {
       padding: 4rem 10rem;
       .card-content {
-        padding: 2rem 5rem;
+        padding: 4rem 5rem;
         justify-content: center;
         #bttns {
           flex-direction: row;
